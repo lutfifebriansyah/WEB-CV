@@ -464,3 +464,22 @@ body {
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.08);
 }
+
+
+/*gambar produk*/
+.produk-img {
+    width: 100%;           /* Lebar penuh mengikuti kartu */
+    height: 150px;         /* Tinggi seragam agar sejajar */
+    object-fit: contain;   /* Gambar tidak terpotong, cocok untuk ATK */
+    background-color: #fff;
+    margin-bottom: 15px;
+    border-radius: 4px;
+}
+
+.card {
+    /* Tambahan agar kartu produk lebih kokoh */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: auto;
+}
