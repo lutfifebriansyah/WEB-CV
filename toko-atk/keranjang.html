@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keranjang Belanja</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="logo">
+        <a href="index.html" style="color:white; text-decoration:none;">TOKO ATK</a>
+    </div>
+    <ul class="menu">
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="produk.html">Produk</a></li>
+        <li><a href="keranjang.html">Keranjang</a></li>
+        <li><a href="tentang.html">Tentang</a></li>
+        <li><a href="kontak.html">Kontak</a></li>
+    </ul>
+</nav>
+
+
+<section class="keranjang-page">
+    <div class="keranjang-left">
+        <h2>🛒 Keranjang Belanja</h2>
+        <div id="keranjang-container"></div>
+    </div>
+
+    <div class="keranjang-right">
+        <h3>Ringkasan Belanja</h3>
+        <p>Total Harga: <span id="subtotal"></span></p>
+        <p>Ongkos Kirim: <span id="ongkir">Rp 15.000</span></p>
+        <hr>
+        <h4>Total Pembayaran: <span id="total-bayar"></span></h4>
+
+        <a href="checkout.html">
+            <button class="checkout-btn">Lanjut ke Checkout</button>
+        </a>
+    </div>
+</section>
+
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

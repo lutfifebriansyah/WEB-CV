@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="logo">
+        <a href="index.html" style="color:white; text-decoration:none;">TOKO ATK</a>
+    </div>
+    <ul class="menu">
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="produk.html">Produk</a></li>
+        <li><a href="keranjang.html">Keranjang</a></li>
+    </ul>
+</nav>
+
+<section class="checkout-page">
+
+    <!-- KIRI -->
+    <div class="checkout-form">
+        <h2>Informasi Pengiriman</h2>
+
+        <form onsubmit="prosesCheckout(event)">
+            <label>Nama Lengkap *</label>
+            <input type="text" id="nama" required>
+
+            <label>Email *</label>
+            <input type="email" id="email" required>
+
+            <label>No. Telepon *</label>
+            <input type="tel" id="telepon" required>
+
+            <label>Alamat Lengkap *</label>
+            <textarea id="alamat" required></textarea>
+
+            <label>Kota *</label>
+            <input type="text" id="kota" required>
+
+            <label>Kode Pos *</label>
+            <input type="text" id="kodepos" required>
+
+            <label>Metode Pengiriman *</label>
+            <select id="pengiriman" required>
+                <option value="">-- Pilih --</option>
+                <option value="Reguler">Reguler (2–3 hari) - Rp 15.000</option>
+            </select>
+
+            <button type="submit">Bayar Sekarang</button>
+        </form>
+    </div>
+
+    <!-- ✅ KANAN (SEJAJAR, BUKAN DI DALAM FORM) -->
+    <div class="checkout-summary">
+        <h3>Ringkasan Belanja</h3>
+
+        <p>Subtotal <span id="checkout-subtotal">Rp 0</span></p>
+        <p>Ongkos Kirim <span id="checkout-ongkir">Rp 0</span></p>
+        <hr>
+        <h4>Total <span id="checkout-total">Rp 0</span></h4>
+    </div>
+
+</section>
+
+
+
+<div id="popup-checkout" class="popup-overlay">
+    <div class="popup-box">
+        <div class="popup-icon">✔</div>
+        <h2>Pembayaran Berhasil</h2>
+        <p>Terima kasih, pesanan Anda sedang diproses.</p>
+
+        <div class="popup-btn">
+            <button onclick="selesaiCheckout()">OK</button>
+        </div>
+    </div>
+</div>
+
+
+</section>
+
+<script src="js/script.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produk ATK</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="logo">
+        <a href="index.html" style="color:white; text-decoration:none;">TOKO ATK</a>
+    </div>
+    <ul class="menu">
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="produk.html">Produk</a></li>
+        <li><a href="keranjang.html">Keranjang</a></li>
+        <li><a href="tentang.html">Tentang</a></li>
+        <li><a href="kontak.html">Kontak</a></li>
+    </ul>
+</nav>
+
+
+<section class="produk">
+    <h1>Produk Alat Tulis Kantor</h1>
+
+    <div class="produk-list">
+
+    <!-- PRODUK 1 -->
+    <div class="card">
+        <h3>Pulpen Standard</h3>
+        <p>Rp 3.000</p>
+        <button onclick="tambahKeKeranjang(1, 'Pulpen Standard', 3000)">
+            Tambah ke Keranjang
+        </button>
+    </div>
+
+    <!-- PRODUK 2 -->
+    <div class="card">
+        <h3>Buku Tulis</h3>
+        <p>Rp 5.000</p>
+        <button onclick="tambahKeKeranjang(2, 'Buku Tulis', 5000)">
+            Tambah ke Keranjang
+        </button>
+    </div>
+
+    <!-- PRODUK 3 -->
+    <div class="card">
+        <h3>Pensil 2B</h3>
+        <p>Rp 2.000</p>
+        <button onclick="tambahKeKeranjang(3, 'Pensil 2B', 2000)">
+            Tambah ke Keranjang
+        </button>
+    </div>
+
+    <!-- PRODUK 4 -->
+    <div class="card">
+        <h3>Penghapus</h3>
+        <p>Rp 1.500</p>
+        <button onclick="tambahKeKeranjang(4, 'Penghapus', 1500)">
+            Tambah ke Keranjang
+        </button>
+    </div>
+
+    <!-- PRODUK 5 -->
+    <div class="card">
+        <h3>Penggaris</h3>
+        <p>Rp 4.000</p>
+        <button onclick="tambahKeKeranjang(5, 'Penggaris', 4000)">
+            Tambah ke Keranjang
+        </button>
+    </div>
+
+    <!-- PRODUK 6 -->
+    <div class="card">
+        <h3>Spidol</h3>
+        <p>Rp 8.000</p>
+        <button onclick="tambahKeKeranjang(6, 'Spidol', 8000)">
+            Tambah ke Keranjang
+        </button>
+    </div>
+
+    <!-- PRODUK 7 -->
+    <div class="card">
+        <h3>Stabilo</h3>
+        <p>Rp 6.000</p>
+        <button onclick="tambahKeKeranjang(7, 'Stabilo', 6000)">
+            Tambah ke Keranjang
+        </button>
+    </div>
+
+    <!-- PRODUK 8 -->
+    <div class="card">
+        <h3>Map Plastik</h3>
+        <p>Rp 3.500</p>
+        <button onclick="tambahKeKeranjang(8, 'Map Plastik', 3500)">
+            Tambah ke Keranjang
+        </button>
+    </div>
+
+    <!-- PRODUK 9 -->
+    <div class="card">
+        <h3>Lem Kertas</h3>
+        <p>Rp 4.500</p>
+        <button onclick="tambahKeKeranjang(9, 'Lem Kertas', 4500)">
+            Tambah ke Keranjang
+        </button>
+    </div>
+
+</div>
+
+</section>
+
+<!-- POPUP -->
+<div id="popup" class="popup-overlay">
+    <div class="popup-box">
+        <div class="popup-icon">✔</div>
+        <h2>Berhasil!</h2>
+        <p id="popup-text">Produk ditambahkan ke keranjang</p>
+
+        <div class="popup-btn">
+            <button onclick="tutupPopup()">Lanjut Belanja</button>
+            <a href="keranjang.html">
+                <button class="btn-outline">Lihat Keranjang</button>
+            </a>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

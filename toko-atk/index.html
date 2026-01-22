@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toko ATK</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+    <div class="logo">TOKO ATK</div>
+    <ul class="menu">
+        <li><a href="../index.html" style="color: #ffeb3b; font-weight: bold;">← KEMBALI KE CV</a></li> 
+        
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="produk.html">Produk</a></li>
+        <li><a href="keranjang.html">Keranjang</a></li>
+        <li><a href="tentang.html">Tentang</a></li>
+        <li><a href="kontak.html">Kontak</a></li>
+    </ul>
+</nav>
+<section class="hero">
+    <h1>Selamat Datang di Toko ATK</h1>
+    <p>Menyediakan alat tulis kantor lengkap & terjangkau</p>
+</section>
+
+<section class="produk-beranda">
+    <h2>Produk Terbaru</h2>
+
+    <div class="produk-list">
+        <div class="card">
+            <h3>Pulpen Standard</h3>
+            <p>Rp 3.000</p>
+            <button onclick="tambahKeKeranjang(1, 'Pulpen Standard', 3000)">
+                Tambah ke Keranjang
+            </button>
+        </div>
+
+        <div class="card">
+            <h3>Buku Tulis Sidu</h3>
+            <p>Rp 5.000</p>
+            <button onclick="tambahKeKeranjang(2, 'Buku Tulis Sidu', 5000)">
+                Tambah ke Keranjang
+            </button>
+        </div>
+
+        <div class="card">
+            <h3>Spidol Snowman</h3>
+            <p>Rp 8.000</p>
+            <button onclick="tambahKeKeranjang(3, 'Spidol Snowman', 8000)">
+                Tambah ke Keranjang
+            </button>
+        </div>
+    </div>
+</section>
+
+
+<!-- POPUP TAMBAH KE KERANJANG -->
+<div id="popup" class="popup-overlay">
+    <div class="popup-box">
+        <div class="popup-icon">✔</div>
+        <p id="popup-text">Produk ditambahkan</p>
+
+        <div class="popup-btn">
+            <button onclick="tutupPopup()">OK</button>
+        </div>
+    </div>
+</div>
+
+<script src="js/script.js"></script>
+
+
+
+</body>
+</html>
